@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.api_home),
+    path("<int:pk>/", views.product_detail_view)
 ]
